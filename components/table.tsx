@@ -24,8 +24,8 @@ export default async function Table() {
           <div key={user.name} className='flex items-center justify-between py-3'>
             <div className='flex items-center space-x-4'>
               <Image
-                src={user.image}
-                alt={user.name}
+                src={user.image as string}
+                alt={user.name as string}
                 width={48}
                 height={48}
                 className='rounded-full ring-1 ring-gray-900/5'
